@@ -12,7 +12,7 @@
             <h2 class="page-head-line">Components</h2>
         </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -81,7 +81,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="row">
         <div class="col-md-6">
             <div class="panel panel-default">
