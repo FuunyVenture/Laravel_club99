@@ -1,0 +1,51 @@
+{
+    "name": "App\\Http\\Middleware\\EncryptCookies",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Http\\Middleware",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\Http\\Middleware\\EncryptCookies.php",
+    "relative_file": null,
+    "hash": "570743640ff348cd3e679291d8ffb3c992cea7ac",
+    "parent": "Illuminate\\Cookie\\Middleware\\EncryptCookies",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "BaseEncrypter": "Illuminate\\Cookie\\Middleware\\EncryptCookies"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "except": {
+            "name": "except",
+            "line": 14,
+            "short_desc": "The names of the cookies that should not be encrypted.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [],
+                "attributes": {
+                    "startLine": 14,
+                    "endLine": 16,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": [],
+    "constants": []
+}

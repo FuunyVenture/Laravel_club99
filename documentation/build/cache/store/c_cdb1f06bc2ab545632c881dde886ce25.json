@@ -1,0 +1,160 @@
+{
+    "name": "App\\Http\\Controllers\\Member\\ProfileController",
+    "line": 20,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Http\\Controllers\\Member",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\Http\\Controllers\\Member\\ProfileController.php",
+    "relative_file": null,
+    "hash": "f59619e40d30d69a60864ea92bd7be6119895f53",
+    "parent": "App\\Http\\Controllers\\Controller",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Address": "App\\Address",
+        "ProfileRequest": "App\\Http\\Requests\\ProfileRequest",
+        "Carbon": "Carbon\\Carbon",
+        "Request": "Illuminate\\Http\\Request",
+        "Requests": "App\\Http\\Requests",
+        "Controller": "App\\Http\\Controllers\\Controller",
+        "Auth": "Illuminate\\Support\\Facades\\Auth",
+        "Session": "Illuminate\\Support\\Facades\\Session",
+        "Log": "Log"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 22,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "profile": {
+            "name": "profile",
+            "line": 28,
+            "short_desc": "Return the profile view.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "editProfile": {
+            "name": "editProfile",
+            "line": 35,
+            "short_desc": "Return the view for editing the profile.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "updateProfile": {
+            "name": "updateProfile",
+            "line": 60,
+            "short_desc": "Update the profile in storage.",
+            "long_desc": "* Request must contains:\n* firstname - user's firstname (required, max. 255 characters)\n* lastname - user's lastname (required, max. 255 characters)\n* email - user's email address (required, e-mail format, max. 255 characters)\n* birthday_birthDay - user's birthday\n* home_number - user's home number (max. 255 characters)\n* mobile_number - user's mobile number (max. 255 characters)\n* address_line1 - user's address (required, max. 255 characters)\n* city - user's address city (required, max. 255 characters)\n* country - user's address country (required, max. 255 characters)\n* zipcode - user's address zip code (max. 255 characters)\n\nOn Success: return message 'Your Profile Updated Successfully'",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 60,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Http\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Http",
+                            "Request"
+                        ],
+                        "attributes": {
+                            "startLine": 60,
+                            "endLine": 60
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "updateAvatar": {
+            "name": "updateAvatar",
+            "line": 137,
+            "short_desc": "Update user's avatar.",
+            "long_desc": "Request must contains:\n* avatar - user's avatar",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 137,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Http\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Http",
+                            "Request"
+                        ],
+                        "attributes": {
+                            "startLine": 137,
+                            "endLine": 137
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

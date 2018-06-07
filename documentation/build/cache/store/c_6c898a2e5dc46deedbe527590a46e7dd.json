@@ -1,0 +1,342 @@
+{
+    "name": "App\\Http\\Controllers\\Admin\\DatatablesController",
+    "line": 27,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Http\\Controllers\\Admin",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\Http\\Controllers\\Admin\\DatatablesController.php",
+    "relative_file": null,
+    "hash": "2a18efc9a96ec6581757edeb6b309b7e670b8171",
+    "parent": "App\\Http\\Controllers\\Controller",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Coupon": "App\\Coupon",
+        "Feature": "App\\Feature",
+        "Fee": "App\\Fee",
+        "Controller": "App\\Http\\Controllers\\Controller",
+        "Invoice": "App\\Invoice",
+        "Product": "App\\Product",
+        "Shipment": "App\\Shipment",
+        "Menu": "App\\Menu",
+        "Package": "App\\Package",
+        "Page": "App\\Page",
+        "Retailer": "App\\Retailer",
+        "Tax": "App\\Tax",
+        "Carbon": "Carbon\\Carbon",
+        "Auth": "Illuminate\\Support\\Facades\\Auth",
+        "Datatables": "Yajra\\Datatables\\Datatables",
+        "User": "App\\User",
+        "Setting": "App\\Setting",
+        "Role": "App\\Role",
+        "Log": "Log"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "shipmentStatusMap": {
+            "name": "shipmentStatusMap",
+            "line": 35,
+            "short_desc": "Contains mapped statuses of a shipment",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 4,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 38,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getUsers": {
+            "name": "getUsers",
+            "line": 61,
+            "short_desc": "Populate users admin frontend table via AJAX",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getSettings": {
+            "name": "getSettings",
+            "line": 102,
+            "short_desc": "Populate Settings admin frontend table via AJAX",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getRoles": {
+            "name": "getRoles",
+            "line": 121,
+            "short_desc": "Populate Roles admin frontend table via AJAX",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getMenus": {
+            "name": "getMenus",
+            "line": 143,
+            "short_desc": "Populate menus admin frontend table via AJAX",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getPackages": {
+            "name": "getPackages",
+            "line": 159,
+            "short_desc": "Populate Packages admin frontend tables",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getFeatures": {
+            "name": "getFeatures",
+            "line": 181,
+            "short_desc": "Populate Features admin frontend table via AJAX",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getPages": {
+            "name": "getPages",
+            "line": 200,
+            "short_desc": "Populate Pages admin frontend table via AJAX",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getShipments": {
+            "name": "getShipments",
+            "line": 222,
+            "short_desc": "Populate Shipments admin frontend table via AJAX",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getInvoices": {
+            "name": "getInvoices",
+            "line": 291,
+            "short_desc": "Populate Invoices admin frontend table via AJAX",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getFees": {
+            "name": "getFees",
+            "line": 373,
+            "short_desc": "Populate Fees admin frontend table via AJAX",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getCoupons": {
+            "name": "getCoupons",
+            "line": 390,
+            "short_desc": "Populate Coupons admin frontend table via AJAX",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getRetailers": {
+            "name": "getRetailers",
+            "line": 407,
+            "short_desc": "Populate Retailers admin frontend table via AJAX",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getMemberSenders": {
+            "name": "getMemberSenders",
+            "line": 432,
+            "short_desc": "Populate Members Senders admin frontend table via AJAX",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getClassifications": {
+            "name": "getClassifications",
+            "line": 458,
+            "short_desc": "Populate Classification admin frontend table via AJAX",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

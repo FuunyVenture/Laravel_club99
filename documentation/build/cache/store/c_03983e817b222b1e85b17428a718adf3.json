@@ -1,0 +1,27 @@
+{
+    "name": "App\\Jobs\\Job",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Jobs",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\Jobs\\Job.php",
+    "relative_file": null,
+    "hash": "de274fc4944766ea7753f744719f1d623289e387",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Queueable": "Illuminate\\Bus\\Queueable"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Illuminate\\Bus\\Queueable": "Illuminate\\Bus\\Queueable"
+    },
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

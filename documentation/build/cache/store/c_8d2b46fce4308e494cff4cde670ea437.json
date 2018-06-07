@@ -1,0 +1,64 @@
+{
+    "name": "App\\Http\\Requests\\UserRequest",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Http\\Requests",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\Http\\Requests\\UserRequest.php",
+    "relative_file": null,
+    "hash": "985e7d428fd9e6bfad1484e29bd2762460aece7d",
+    "parent": "App\\Http\\Requests\\Request",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Request": "App\\Http\\Requests\\Request"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "authorize": {
+            "name": "authorize",
+            "line": 14,
+            "short_desc": "Determine if the user is authorized to make this request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "rules": {
+            "name": "rules",
+            "line": 23,
+            "short_desc": "Get the validation rules that apply to the request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

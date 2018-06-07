@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>App\Http\Controllers\Admin\ShipmentsController | Club99love API Documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:App_Http_Controllers_Admin_ShipmentsController" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Club99love API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../../App.html">App</a></li>
+                                        <li><a href="../../../../App/Http.html">Http</a></li>
+                                        <li><a href="../../../../App/Http/Controllers.html">Controllers</a></li>
+                                        <li><a href="../../../../App/Http/Controllers/Admin.html">Admin</a></li>
+    
+                <li>ShipmentsController</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ShipmentsController
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ShipmentsController</strong>        extends <a href="../../../../App/Http/Controllers/Controller.html"><abbr title="App\Http\Controllers\Controller">Controller</abbr></a>
+</p>
+
+        
+    
+
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Foundation\Auth\Access\AuthorizesRequests">AuthorizesRequests</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Foundation\Bus\DispatchesJobs">DispatchesJobs</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Foundation\Validation\ValidatesRequests">ValidatesRequests</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_shipmentStatusMap">
+                                                            private                    array
+                </td>
+                <td>$shipmentStatusMap</td>
+                <td class="last">Map statues of shipment</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Http\Controllers\Admin\View">View</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_index">index</a>()
+        
+                                            <p>Display a listing of the shipments.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>()
+        
+                                            <p>Show the form for creating a new resource.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_store">store</a>(<abbr title="Illuminate\Http\Request">Request</abbr> $request)
+        
+                                            <p>Store a newly created shipment in storage.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_uploadShipmentInvoice">uploadShipmentInvoice</a>(<abbr title="Illuminate\Http\Request">Request</abbr> $request)
+        
+                                            <p>Upload shipment pdf invoice.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Http\Controllers\Admin\View">View</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_show">show</a>(int $id)
+        
+                                            <p>Display the specified shipment.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Http\Controllers\Admin\View">View</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_edit">edit</a>(int $id)
+        
+                                            <p>Show the form for editing the specified shipment.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, int $id)
+        
+                                            <p>Update the specified shipment in storage.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_destroy">destroy</a>(int $id)
+        
+                                            <p>Remove the specified resource from storage.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getByUser">getByUser</a>(<abbr title="Illuminate\Http\Request">Request</abbr> $request)
+        
+                                            <p>Get shipment's user</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_approve">approve</a>($id)
+        
+                                            <p>Approve specified shipment</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_collect">collect</a>($id)
+        
+                                            <p>Mark a shipment as collected</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 36</div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_index">
+        <div class="location">at         line 59</div>
+        <code>                    <abbr title="App\Http\Controllers\Admin\View">View</abbr>
+    <strong>index</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Display a listing of the shipments.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Http\Controllers\Admin\View">View</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         line 87</div>
+        <code>                    <abbr title="Illuminate\Http\Response">Response</abbr>
+    <strong>create</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Show the form for creating a new resource.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_store">
+        <div class="location">at         line 123</div>
+        <code>                    <abbr title="Illuminate\Http\Response">Response</abbr>
+    <strong>store</strong>(<abbr title="Illuminate\Http\Request">Request</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Store a newly created shipment in storage.</p>                    <p><ul>
+<li>Request must contain:
+
+<ul>
+<li>retailer_id - id of retailer</li>
+<li>retailer_name - name of retailer</li>
+<li>invoice - pdf file invoice</li>
+<li>shipping_amount</li>
+<li>tax_amount</li>
+<li>weight</li>
+<li>height</li>
+<li>length</li>
+<li>d</li>
+<li>tracking_number</li>
+<li>order_number</li>
+<li>user</li>
+<li>delivery_firstname</li>
+<li>delivery_lastname</li>
+<li>delivery_address</li>
+<li>delivery_city</li>
+<li>delivery_state</li>
+<li>delivery<em>zip</em>code</li>
+<li>delivery<em>zip</em>country</li>
+</ul></li>
+</ul>
+</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Http\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\Response">Response</abbr></td>
+            <td>On Success: return success message. User will be notified via notification and via email.</p>
+
+<p>On Error: return error message 'Something went wrong! Please try again later.'</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_uploadShipmentInvoice">
+        <div class="location">at         line 286</div>
+        <code>                    <abbr title="Illuminate\Http\Response">Response</abbr>
+    <strong>uploadShipmentInvoice</strong>(<abbr title="Illuminate\Http\Request">Request</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Upload shipment pdf invoice.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Http\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\Response">Response</abbr></td>
+            <td>On Success: redirect to 'admin/invoices' with success message 'Shipment Invoice replaced succesfuly!'</p>
+
+<p>On Error: redirect to 'admin/invoices' with error message 'Something went wrong!'</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_show">
+        <div class="location">at         line 311</div>
+        <code>                    <abbr title="App\Http\Controllers\Admin\View">View</abbr>
+    <strong>show</strong>(int $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Display the specified shipment.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Http\Controllers\Admin\View">View</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_edit">
+        <div class="location">at         line 323</div>
+        <code>                    <abbr title="App\Http\Controllers\Admin\View">View</abbr>
+    <strong>edit</strong>(int $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Show the form for editing the specified shipment.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Http\Controllers\Admin\View">View</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at         line 370</div>
+        <code>                    <abbr title="Illuminate\Http\Response">Response</abbr>
+    <strong>update</strong>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, int $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update the specified shipment in storage.</p>                    <p><ul>
+<li>Request must contain:
+
+<ul>
+<li>retailer_id - id of retailer</li>
+<li>retailer_name - name of retailer</li>
+<li>invoice - pdf file invoice</li>
+<li>status - shipment status</li>
+<li>shipping_amount</li>
+<li>tax_amount</li>
+<li>weight</li>
+<li>height</li>
+<li>length</li>
+<li>d</li>
+<li>tracking_number</li>
+<li>order_number</li>
+<li>user</li>
+<li>delivery_firstname</li>
+<li>delivery_lastname</li>
+<li>delivery_address</li>
+<li>delivery_city</li>
+<li>delivery_state</li>
+<li>delivery<em>zip</em>code</li>
+<li>delivery<em>zip</em>country</li>
+</ul></li>
+</ul>
+</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Http\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\Response">Response</abbr></td>
+            <td>On Success: return success message '[Shipment name] has been successfully edited.'. User will be notified via notification and via email.</p>
+
+<p>On Error: return error message 'Something went wrong! Please try again later.'</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_destroy">
+        <div class="location">at         line 462</div>
+        <code>                    <abbr title="Illuminate\Http\Response">Response</abbr>
+    <strong>destroy</strong>(int $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove the specified resource from storage.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getByUser">
+        <div class="location">at         line 475</div>
+        <code>                    <abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr>
+    <strong>getByUser</strong>(<abbr title="Illuminate\Http\Request">Request</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get shipment's user</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Http\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr></td>
+            <td>On Success: return Json with shipment, products and user objects</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_approve">
+        <div class="location">at         line 499</div>
+        <code>                    <abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr>
+    <strong>approve</strong>($id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Approve specified shipment</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr></td>
+            <td>On Success: redirect to 'admin/shipments' with success message 'Shipment Approved'. User  will be notified via notification and email.</p>
+
+<p>On Error: redirect to 'admin/shipments' with error message 'Something went wrong! Please try again later.'</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_collect">
+        <div class="location">at         line 547</div>
+        <code>                    <abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr>
+    <strong>collect</strong>($id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Mark a shipment as collected</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr></td>
+            <td>On Success: redirect to 'admin/shipments' with success message  'Shipment Collected'. User will be notified via notification and email</p>
+
+<p>On Error: redirect to 'admin/shipments' with error message 'Something went wrong! Please try again later.'</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,170 @@
+{
+    "name": "App\\Feature",
+    "line": 10,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "property": [
+            [
+                [
+                    [
+                        "array",
+                        false
+                    ],
+                    [
+                        "string",
+                        false
+                    ]
+                ],
+                "",
+                "name"
+            ],
+            [
+                [
+                    [
+                        "array",
+                        false
+                    ],
+                    [
+                        "string",
+                        false
+                    ]
+                ],
+                "",
+                "status"
+            ]
+        ]
+    },
+    "namespace": "App",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\Feature.php",
+    "relative_file": null,
+    "hash": "7df083c0b0157531a497fba19e9e8d00e4787e49",
+    "parent": "App\\BaseModel",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "BaseModel": "App\\BaseModel"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "guarded": {
+            "name": "guarded",
+            "line": 17,
+            "short_desc": "The attributes that aren't mass assignable.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "id",
+                            "attributes": {
+                                "startLine": 17,
+                                "endLine": 17,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 17,
+                            "endLine": 17
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 17,
+                    "endLine": 17,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "scopeActive": {
+            "name": "scopeActive",
+            "line": 19,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "query": {
+                    "name": "query",
+                    "line": 19,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getStatusAttribute": {
+            "name": "getStatusAttribute",
+            "line": 24,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "packages": {
+            "name": "packages",
+            "line": 29,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isActive": {
+            "name": "isActive",
+            "line": 34,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

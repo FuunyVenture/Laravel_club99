@@ -1,0 +1,69 @@
+{
+    "name": "App\\Http\\Controllers\\Auth\\PasswordController",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Http\\Controllers\\Auth",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\Http\\Controllers\\Auth\\PasswordController.php",
+    "relative_file": null,
+    "hash": "e6d36d633b6a7f9fae8bbb73eebef1dd5160d9a9",
+    "parent": "App\\Http\\Controllers\\Controller",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Controller": "App\\Http\\Controllers\\Controller",
+        "ResetsPasswords": "Illuminate\\Foundation\\Auth\\ResetsPasswords"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Illuminate\\Foundation\\Auth\\ResetsPasswords": "Illuminate\\Foundation\\Auth\\ResetsPasswords"
+    },
+    "properties": {
+        "redirectTo": {
+            "name": "redirectTo",
+            "line": 28,
+            "short_desc": "Where to redirect users after login \/ registration.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "member\/home",
+                "attributes": {
+                    "startLine": 28,
+                    "endLine": 28,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 34,
+            "short_desc": "Create a new password controller instance.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

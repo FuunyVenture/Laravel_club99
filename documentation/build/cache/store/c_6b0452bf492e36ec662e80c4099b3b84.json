@@ -1,0 +1,699 @@
+{
+    "name": "App\\Http\\Kernel",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Http",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\Http\\Kernel.php",
+    "relative_file": null,
+    "hash": "0a000dcf956a8410af72746379aa7e00dbba4654",
+    "parent": "Illuminate\\Foundation\\Http\\Kernel",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "HttpKernel": "Illuminate\\Foundation\\Http\\Kernel"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "middleware": {
+            "name": "middleware",
+            "line": 16,
+            "short_desc": "The application's global HTTP middleware stack.",
+            "long_desc": "These middleware are run during every request to your application.",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Expr_ClassConstFetch",
+                            "class": {
+                                "nodeType": "Name_FullyQualified",
+                                "parts": [
+                                    "Illuminate",
+                                    "Foundation",
+                                    "Http",
+                                    "Middleware",
+                                    "CheckForMaintenanceMode"
+                                ],
+                                "attributes": {
+                                    "startLine": 17,
+                                    "endLine": 17
+                                }
+                            },
+                            "name": "class",
+                            "attributes": {
+                                "startLine": 17,
+                                "endLine": 17
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 17,
+                            "endLine": 17
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 16,
+                    "endLine": 18,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        },
+        "middlewareGroups": {
+            "name": "middlewareGroups",
+            "line": 25,
+            "short_desc": "The application's route middleware groups.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "web",
+                            "attributes": {
+                                "startLine": 26,
+                                "endLine": 26,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "items": [
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "key": null,
+                                    "value": {
+                                        "nodeType": "Expr_ClassConstFetch",
+                                        "class": {
+                                            "nodeType": "Name_FullyQualified",
+                                            "parts": [
+                                                "App",
+                                                "Http",
+                                                "Middleware",
+                                                "EncryptCookies"
+                                            ],
+                                            "attributes": {
+                                                "startLine": 27,
+                                                "endLine": 27
+                                            }
+                                        },
+                                        "name": "class",
+                                        "attributes": {
+                                            "startLine": 27,
+                                            "endLine": 27
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "attributes": {
+                                        "startLine": 27,
+                                        "endLine": 27
+                                    }
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "key": null,
+                                    "value": {
+                                        "nodeType": "Expr_ClassConstFetch",
+                                        "class": {
+                                            "nodeType": "Name_FullyQualified",
+                                            "parts": [
+                                                "Illuminate",
+                                                "Cookie",
+                                                "Middleware",
+                                                "AddQueuedCookiesToResponse"
+                                            ],
+                                            "attributes": {
+                                                "startLine": 28,
+                                                "endLine": 28
+                                            }
+                                        },
+                                        "name": "class",
+                                        "attributes": {
+                                            "startLine": 28,
+                                            "endLine": 28
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "attributes": {
+                                        "startLine": 28,
+                                        "endLine": 28
+                                    }
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "key": null,
+                                    "value": {
+                                        "nodeType": "Expr_ClassConstFetch",
+                                        "class": {
+                                            "nodeType": "Name_FullyQualified",
+                                            "parts": [
+                                                "Illuminate",
+                                                "Session",
+                                                "Middleware",
+                                                "StartSession"
+                                            ],
+                                            "attributes": {
+                                                "startLine": 29,
+                                                "endLine": 29
+                                            }
+                                        },
+                                        "name": "class",
+                                        "attributes": {
+                                            "startLine": 29,
+                                            "endLine": 29
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "attributes": {
+                                        "startLine": 29,
+                                        "endLine": 29
+                                    }
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "key": null,
+                                    "value": {
+                                        "nodeType": "Expr_ClassConstFetch",
+                                        "class": {
+                                            "nodeType": "Name_FullyQualified",
+                                            "parts": [
+                                                "Illuminate",
+                                                "View",
+                                                "Middleware",
+                                                "ShareErrorsFromSession"
+                                            ],
+                                            "attributes": {
+                                                "startLine": 30,
+                                                "endLine": 30
+                                            }
+                                        },
+                                        "name": "class",
+                                        "attributes": {
+                                            "startLine": 30,
+                                            "endLine": 30
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "attributes": {
+                                        "startLine": 30,
+                                        "endLine": 30
+                                    }
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "key": null,
+                                    "value": {
+                                        "nodeType": "Expr_ClassConstFetch",
+                                        "class": {
+                                            "nodeType": "Name_FullyQualified",
+                                            "parts": [
+                                                "App",
+                                                "Http",
+                                                "Middleware",
+                                                "VerifyCsrfToken"
+                                            ],
+                                            "attributes": {
+                                                "startLine": 31,
+                                                "endLine": 31
+                                            }
+                                        },
+                                        "name": "class",
+                                        "attributes": {
+                                            "startLine": 31,
+                                            "endLine": 31
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "attributes": {
+                                        "startLine": 31,
+                                        "endLine": 31
+                                    }
+                                }
+                            ],
+                            "attributes": {
+                                "startLine": 26,
+                                "endLine": 32,
+                                "kind": 2
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 26,
+                            "endLine": 32
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "api",
+                            "attributes": {
+                                "startLine": 34,
+                                "endLine": 34,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "items": [
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "key": null,
+                                    "value": {
+                                        "nodeType": "Scalar_String",
+                                        "value": "throttle:60,1",
+                                        "attributes": {
+                                            "startLine": 35,
+                                            "endLine": 35,
+                                            "kind": 1
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "attributes": {
+                                        "startLine": 35,
+                                        "endLine": 35
+                                    }
+                                }
+                            ],
+                            "attributes": {
+                                "startLine": 34,
+                                "endLine": 36,
+                                "kind": 2
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 34,
+                            "endLine": 36
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 25,
+                    "endLine": 37,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        },
+        "routeMiddleware": {
+            "name": "routeMiddleware",
+            "line": 46,
+            "short_desc": "The application's route middleware.",
+            "long_desc": "These middleware may be assigned to groups or used individually.",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "auth",
+                            "attributes": {
+                                "startLine": 47,
+                                "endLine": 47,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_ClassConstFetch",
+                            "class": {
+                                "nodeType": "Name_FullyQualified",
+                                "parts": [
+                                    "App",
+                                    "Http",
+                                    "Middleware",
+                                    "Authenticate"
+                                ],
+                                "attributes": {
+                                    "startLine": 47,
+                                    "endLine": 47
+                                }
+                            },
+                            "name": "class",
+                            "attributes": {
+                                "startLine": 47,
+                                "endLine": 47
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 47,
+                            "endLine": 47
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "admin",
+                            "attributes": {
+                                "startLine": 48,
+                                "endLine": 48,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_ClassConstFetch",
+                            "class": {
+                                "nodeType": "Name_FullyQualified",
+                                "parts": [
+                                    "App",
+                                    "Http",
+                                    "Middleware",
+                                    "Admin"
+                                ],
+                                "attributes": {
+                                    "startLine": 48,
+                                    "endLine": 48
+                                }
+                            },
+                            "name": "class",
+                            "attributes": {
+                                "startLine": 48,
+                                "endLine": 48
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 48,
+                            "endLine": 48
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "auth.basic",
+                            "attributes": {
+                                "startLine": 49,
+                                "endLine": 49,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_ClassConstFetch",
+                            "class": {
+                                "nodeType": "Name_FullyQualified",
+                                "parts": [
+                                    "Illuminate",
+                                    "Auth",
+                                    "Middleware",
+                                    "AuthenticateWithBasicAuth"
+                                ],
+                                "attributes": {
+                                    "startLine": 49,
+                                    "endLine": 49
+                                }
+                            },
+                            "name": "class",
+                            "attributes": {
+                                "startLine": 49,
+                                "endLine": 49
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 49,
+                            "endLine": 49
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "guest",
+                            "attributes": {
+                                "startLine": 50,
+                                "endLine": 50,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_ClassConstFetch",
+                            "class": {
+                                "nodeType": "Name_FullyQualified",
+                                "parts": [
+                                    "App",
+                                    "Http",
+                                    "Middleware",
+                                    "RedirectIfAuthenticated"
+                                ],
+                                "attributes": {
+                                    "startLine": 50,
+                                    "endLine": 50
+                                }
+                            },
+                            "name": "class",
+                            "attributes": {
+                                "startLine": 50,
+                                "endLine": 50
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 50,
+                            "endLine": 50
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "throttle",
+                            "attributes": {
+                                "startLine": 51,
+                                "endLine": 51,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_ClassConstFetch",
+                            "class": {
+                                "nodeType": "Name_FullyQualified",
+                                "parts": [
+                                    "Illuminate",
+                                    "Routing",
+                                    "Middleware",
+                                    "ThrottleRequests"
+                                ],
+                                "attributes": {
+                                    "startLine": 51,
+                                    "endLine": 51
+                                }
+                            },
+                            "name": "class",
+                            "attributes": {
+                                "startLine": 51,
+                                "endLine": 51
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 51,
+                            "endLine": 51
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "notSubscribed",
+                            "attributes": {
+                                "startLine": 52,
+                                "endLine": 52,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_ClassConstFetch",
+                            "class": {
+                                "nodeType": "Name_FullyQualified",
+                                "parts": [
+                                    "App",
+                                    "Http",
+                                    "Middleware",
+                                    "RedirectSubscription"
+                                ],
+                                "attributes": {
+                                    "startLine": 52,
+                                    "endLine": 52
+                                }
+                            },
+                            "name": "class",
+                            "attributes": {
+                                "startLine": 52,
+                                "endLine": 52
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 52,
+                            "endLine": 52
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "subscribed",
+                            "attributes": {
+                                "startLine": 53,
+                                "endLine": 53,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_ClassConstFetch",
+                            "class": {
+                                "nodeType": "Name_FullyQualified",
+                                "parts": [
+                                    "App",
+                                    "Http",
+                                    "Middleware",
+                                    "Subscribed"
+                                ],
+                                "attributes": {
+                                    "startLine": 53,
+                                    "endLine": 53
+                                }
+                            },
+                            "name": "class",
+                            "attributes": {
+                                "startLine": 53,
+                                "endLine": 53
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 53,
+                            "endLine": 53
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "profile",
+                            "attributes": {
+                                "startLine": 54,
+                                "endLine": 54,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_ClassConstFetch",
+                            "class": {
+                                "nodeType": "Name_FullyQualified",
+                                "parts": [
+                                    "App",
+                                    "Http",
+                                    "Middleware",
+                                    "ProfileCompleted"
+                                ],
+                                "attributes": {
+                                    "startLine": 54,
+                                    "endLine": 54
+                                }
+                            },
+                            "name": "class",
+                            "attributes": {
+                                "startLine": 54,
+                                "endLine": 54
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 54,
+                            "endLine": 54
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "activeUser",
+                            "attributes": {
+                                "startLine": 55,
+                                "endLine": 55,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_ClassConstFetch",
+                            "class": {
+                                "nodeType": "Name_FullyQualified",
+                                "parts": [
+                                    "App",
+                                    "Http",
+                                    "Middleware",
+                                    "ActivateUser"
+                                ],
+                                "attributes": {
+                                    "startLine": 55,
+                                    "endLine": 55
+                                }
+                            },
+                            "name": "class",
+                            "attributes": {
+                                "startLine": 55,
+                                "endLine": 55
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 55,
+                            "endLine": 55
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 46,
+                    "endLine": 56,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": [],
+    "constants": []
+}

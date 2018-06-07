@@ -1,0 +1,23 @@
+{
+    "name": "App\\Events\\Event",
+    "line": 5,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Events",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\Events\\Event.php",
+    "relative_file": null,
+    "hash": "b555605af5a72e3f6fc023d800403560a3165d72",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

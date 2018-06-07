@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>App\Http\Controllers\Admin\UsersController | Club99love API Documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:App_Http_Controllers_Admin_UsersController" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Club99love API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../../App.html">App</a></li>
+                                        <li><a href="../../../../App/Http.html">Http</a></li>
+                                        <li><a href="../../../../App/Http/Controllers.html">Controllers</a></li>
+                                        <li><a href="../../../../App/Http/Controllers/Admin.html">Admin</a></li>
+    
+                <li>UsersController</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            UsersController
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>UsersController</strong>        extends <a href="../../../../App/Http/Controllers/Controller.html"><abbr title="App\Http\Controllers\Controller">Controller</abbr></a>
+</p>
+
+        
+    
+
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Foundation\Auth\Access\AuthorizesRequests">AuthorizesRequests</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Foundation\Bus\DispatchesJobs">DispatchesJobs</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Foundation\Validation\ValidatesRequests">ValidatesRequests</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p>UsersController constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Http\Controllers\Admin\View">View</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_index">index</a>()
+        
+                                            <p>Display a listing of the users.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\Response">Response</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>()
+        
+                                            <p>Show the form for creating a new user.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_store">store</a>(<abbr title="Illuminate\Http\Request">Request</abbr> $request)
+        
+                                            <p>Store a newly created user in storage.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Http\Controllers\Admin\View">View</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_show">show</a>(<a href="../../../../App/User.html"><abbr title="App\User">User</abbr></a> $user)
+        
+                                            <p>Display the specified user.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Http\Controllers\Admin\View">View</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_edit">edit</a>(<a href="../../../../App/User.html"><abbr title="App\User">User</abbr></a> $user)
+        
+                                            <p>Show the form for editing the specified user.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, <a href="../../../../App/User.html"><abbr title="App\User">User</abbr></a> $user)
+        
+                                            <p>Update specified user</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_destroy">destroy</a>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, <a href="../../../../App/User.html"><abbr title="App\User">User</abbr></a> $user)
+        
+                                            <p>Delete specified user</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_activate">activate</a>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, $id)
+        
+                                            <p>Activate user if payment option was 'Cash In Store'.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 28</div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>UsersController constructor.</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_index">
+        <div class="location">at         line 38</div>
+        <code>                    <abbr title="App\Http\Controllers\Admin\View">View</abbr>
+    <strong>index</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Display a listing of the users.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Http\Controllers\Admin\View">View</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         line 49</div>
+        <code>                    <abbr title="Illuminate\Http\Response">Response</abbr>
+    <strong>create</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Show the form for creating a new user.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_store">
+        <div class="location">at         line 76</div>
+        <code>                    <abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr>
+    <strong>store</strong>(<abbr title="Illuminate\Http\Request">Request</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Store a newly created user in storage.</p>                    <p><ul>
+<li>Request must contain:
+
+<ul>
+<li>firstname - firstname of user (required|max:255)</li>
+<li>lastname - lastname of user (required|max:255)</li>
+<li>email - email of user (required|email|max:255|unique:users)</li>
+<li>home_number - home phone number (max:255)</li>
+<li>mobile_number - mobile phone number (max:255)</li>
+<li>address_line1 - address (required|max:255)</li>
+<li>city (required|max:255)</li>
+<li>state (required|max:255)</li>
+<li>country (required|max:255)</li>
+<li>zipcode (max:255)</li>
+</ul></li>
+</ul>
+</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Http\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr></td>
+            <td>On Success: redirect to 'admin/users' with success message 'User [user firstname] [user lastname] has been added Successfully.'
+User will be notified via email about new account</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_show">
+        <div class="location">at         line 188</div>
+        <code>                    <abbr title="App\Http\Controllers\Admin\View">View</abbr>
+    <strong>show</strong>(<a href="../../../../App/User.html"><abbr title="App\User">User</abbr></a> $user)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Display the specified user.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../App/User.html"><abbr title="App\User">User</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Http\Controllers\Admin\View">View</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_edit">
+        <div class="location">at         line 199</div>
+        <code>                    <abbr title="App\Http\Controllers\Admin\View">View</abbr>
+    <strong>edit</strong>(<a href="../../../../App/User.html"><abbr title="App\User">User</abbr></a> $user)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Show the form for editing the specified user.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../App/User.html"><abbr title="App\User">User</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Http\Controllers\Admin\View">View</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at         line 234</div>
+        <code>                    <abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr>
+    <strong>update</strong>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, <a href="../../../../App/User.html"><abbr title="App\User">User</abbr></a> $user)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update specified user</p>                    <p><ul>
+<li>Request must contain:
+
+<ul>
+<li>firstname - firstname of user (required|max:255)</li>
+<li>lastname - lastname of user (required|max:255)</li>
+<li>email - email of user (required|email|max:255|unique:users)</li>
+<li>home_number - home phone number (max:255)</li>
+<li>mobile_number - mobile phone number (max:255)</li>
+<li>address_line1 - address (required|max:255)</li>
+<li>city (required|max:255)</li>
+<li>state (required|max:255)</li>
+<li>country (required|max:255)</li>
+<li>zipcode (max:255)</li>
+<li>birthday_birth - user's birthday</li>
+<li>package_id - user's package</li>
+<li>receipt_code - code from store</li>
+<li></li>
+</ul></li>
+</ul>
+</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Http\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../App/User.html"><abbr title="App\User">User</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr></td>
+            <td>On Success: redirect to 'admin/users' with success message 'User [user firstname] [user lastname] has been updated successfully.'
+User will be notified via email about new account</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_destroy">
+        <div class="location">at         line 327</div>
+        <code>                    string
+    <strong>destroy</strong>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, <a href="../../../../App/User.html"><abbr title="App\User">User</abbr></a> $user)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete specified user</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Http\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../App/User.html"><abbr title="App\User">User</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>On Success: return success message 'User has been deleted successfully'</p>
+
+<p>On Error: return error message 'You can\'t proceed in delete operation'</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_activate">
+        <div class="location">at         line 349</div>
+        <code>                    <abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr>
+    <strong>activate</strong>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Activate user if payment option was 'Cash In Store'.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Http\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr></td>
+            <td>On Success: redirect to 'admin/users' with success message 'User [user firstname] [user lastname] was successfully activated.'
+User will be notified via notification and via email.</p>
+
+<p>On Error: redirect to 'admin/users' with err</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

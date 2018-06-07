@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   enable-background="new 0 0 21.764 21.764"
+   viewBox="0 0 21.764 21.764"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="collected-ico.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview10"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:zoom="39.055321"
+     inkscape:cx="14.927544"
+     inkscape:cy="10.882"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <path
+     style="fill:#ffffff"
+     inkscape:connector-curvature="0"
+     id="path2-1"
+     d="m 10.882,0.99999987 c -5.4489998,0 -9.88200028,4.43299993 -9.88200028,9.88200013 0,5.449 4.43300048,9.882 9.88200028,9.882 5.449,0 9.882,-4.433 9.882,-9.882 0,-5.4490002 -4.433,-9.88200013 -9.882,-9.88200013 z"
+     sodipodi:nodetypes="sssss" />
+  <path
+     style="fill:#e3e3e3"
+     inkscape:connector-curvature="0"
+     id="path2"
+     d="M 10.882,21.764 C 4.882,21.764 0,16.882 0,10.882 0,4.882 4.882,0 10.882,0 c 6,0 10.882,4.881 10.882,10.882 0,6.001 -4.882,10.882 -10.882,10.882 z M 10.882,1 C 5.433,1 1,5.433 1,10.882 c 0,5.449 4.433,9.882 9.882,9.882 5.449,0 9.882,-4.433 9.882,-9.882 C 20.764,5.433 16.331,1 10.882,1 Z" />
+  <circle
+     style="clip-rule:evenodd;fill:#4c85f9;fill-rule:evenodd"
+     id="circle4"
+     r="7"
+     cy="10.882"
+     cx="10.882" />
+</svg>

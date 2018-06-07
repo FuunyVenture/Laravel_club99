@@ -1,0 +1,383 @@
+{
+    "name": "App\\PaymentGateways\\PnP",
+    "line": 29,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\PaymentGateways",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\PaymentGateways\\PnP.php",
+    "relative_file": null,
+    "hash": "887eb5c9c8665fa3c13b611b04a3f9d5b635a993",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Log": "Log"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "apiurl": {
+            "name": "apiurl",
+            "line": 31,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "https:\/\/pay1.plugnpay.com\/payment\/pnpremote.cgi",
+                "attributes": {
+                    "startLine": 31,
+                    "endLine": 31,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        },
+        "publisher_name": {
+            "name": "publisher_name",
+            "line": 32,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "websoftebu",
+                "attributes": {
+                    "startLine": 32,
+                    "endLine": 32,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        },
+        "publisher_password": {
+            "name": "publisher_password",
+            "line": 33,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "21d0157d9a79d1ed",
+                "attributes": {
+                    "startLine": 33,
+                    "endLine": 33,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 52,
+            "short_desc": "Object constructor",
+            "long_desc": "Get a new object, in order to make a payment:\n<code>\n$pnp = new PnP();\n<\/code>\n\nor reopen a previous one, to query a payment\n<code>\n$pnp = new PnP( array( 'orderID' => '12345' ));\n$status = $php->query_trans();\n<\/code>",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "args": {
+                    "name": "args",
+                    "line": 52,
+                    "short_desc": "Object construction array. At present, only supports\ncreating an object with a set orderID.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "auth": {
+            "name": "auth",
+            "line": 154,
+            "short_desc": "Process a payment against the Plug n Pay payment gateway.",
+            "long_desc": "<code>\n$pnp = new PnP();\n$response = $pnp->payment( $payment_values );\n<\/code>\n\nValues expected to be in the payment array are:\n\n<code>\ncard-number\ncard-name\ncard-amount\ncard-exp\nemail\nship-name\naddress1\naddress2\ncity\nstate\nzip\ncountry\ncard-cvv (optional)\n<\/code>\n\nFinally, the payment_values array may contain an array named\n'packages', containing the packages which were ordered:\n\n<code>\n$packages = array( 1 => array( 'packages_id' => 1,\n                               'final_price' => 2,\n                               'quantity'    => 3,\n                             )\n                 )\n<\/code>\n\nReturn value will look like:\n\n<code>\n Array\n(\n    [FinalStatus] => fraud\n    [IPaddress] => 192.168.1.153\n    [MStatus] => badcard\n    [User_Agent] =>\n    [address1] => 1421 Main Street\n    [auth_code] =>\n    [auth_date] => 20080613\n    [auth_msg] =>  Invalid Credit Card CVV2\/CVC2 Number.|\n    [authtype] => authonly\n    [card_amount] => 0.02\n    [card_name] => Homer Simpson\n    [card_type] => MSTR\n    [cc_cvv] => 000\n    [city] => Springfield\n    [convert] => underscores\n    [currency] => usd\n    [dontsndmail] => yes\n    [easycart] => 1\n    [email] =>\n    [errdetails] => card-cvv|CVV invalid length.|\n    [errlevel] => 1\n    [ipaddress] => 192.168.1.153\n    [merchant] => pnpusername\n    [mode] => auth\n    [orderID] => 121345678090645094\n    [paymethod] => credit\n    [publisher_email] => test@example.com\n    [publisher_name] => pnpusername\n    [resp_code] => P56\n    [ship_name] => Homer Simpson\n    [shipinfo] => 1\n    [sresp] => E\n    [state] => UT\n    [success] => no\n    [zip] => 40997\n    [MErrMsg] => Invalid Credit Card CVV2\/CVC2 Number.|\n    [a] => b\n\n)\n<\/code>",
+            "hint": [
+                [
+                    "\\App\\PaymentGateways\\StdClass",
+                    false
+                ]
+            ],
+            "hint_desc": "Response array - example shown above.",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [
+                "The \"payment_array\" @param tag variable name is wrong (should be \"args\")"
+            ],
+            "parameters": {
+                "args": {
+                    "name": "args",
+                    "line": 154,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "void": {
+            "name": "void",
+            "line": 217,
+            "short_desc": "Cancels the most recent transaction operation of the given orderID.",
+            "long_desc": "Mandatory argument 'card-amount', which must not exceed the amount of\nthe original transaction. You may wish to obtain that amount ahead of\ntime by calling $pnp->query_trans();\nOptional argument 'notify-email', where email notification can be\nsent for transaction problems.",
+            "hint": [
+                [
+                    "\\App\\PaymentGateways\\StdClass",
+                    false
+                ]
+            ],
+            "hint_desc": "Return object",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "args": {
+                    "name": "args",
+                    "line": 217,
+                    "short_desc": "Argument array",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "authprev": {
+            "name": "authprev",
+            "line": 261,
+            "short_desc": "Do a new authorizaction, using information from a previous\nauthorization, so that you don't need to know the payment information\nagain.",
+            "long_desc": "You may explicitly pass the prevorderid in the argument list, or you\nmay create a PnP object with the orderID of the previous transaction\n- which ever is more convenient.\n\n<code>\n$pnp = new PnP( array( 'orderID' => $prevorderID ));\n$results = $pnp->authprev( array( 'card-amount' => '123.45' ));\n$neworderid = $pnp->orderID;\n<code>\n\nOr i f you prefer:\n\n<code>\n$pnp = new PnP();\n$results = $pnp->authprev( array( 'prevorderid' => $prevorderID,\n                                  'card-amount' => '123.45' ));\n$neworderid = $pnp->orderID;\n<\/code>\n\n'card-amount' is a required argument.\n\n'reauthtype' is an optional argument.",
+            "hint": [
+                [
+                    "\\App\\PaymentGateways\\StdClass",
+                    false
+                ]
+            ],
+            "hint_desc": "Return object",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "args": {
+                    "name": "args",
+                    "line": 261,
+                    "short_desc": "Argument array",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "query_trans": {
+            "name": "query_trans",
+            "line": 294,
+            "short_desc": "Query for the status of a completed transaction",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\App\\PaymentGateways\\StdClass",
+                    false
+                ]
+            ],
+            "hint_desc": "Return object of response values, as per the documentation",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "args": {
+                    "name": "args",
+                    "line": 294,
+                    "short_desc": "Arguments. Can specify the 'startdate' if you wish.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "list_members": {
+            "name": "list_members",
+            "line": 349,
+            "short_desc": "List all active\/expired profiles and related password info",
+            "long_desc": "<code>\n$pnp = new PnP();\n$members = $pnp->list_members( array( 'status' => 'active' ) );\n<\/code>\n\nPossible arguments are 'status' ('active', 'expired', or 'all') and\n'crypt' ('crypt', 'md5', or 'none')\n\nReturn object contains 5 attributes: FinalStatus, auth-msg, MErrMsg,\nTranCount, and members. TranCount contains the number of members.\nmembers contains a StdClass object for each of those members. Each\nmember contains attributes username, password, enddate, and\npurchaseid, and also an attribute 'key' which indicates the axxxxx\nkey where the original data appears in the return object.\n\nThere will also be methods a00000 - axxxxx for numbers from 0 to\nTranCount, which will return a url-encoded version of the member\ndata, which you can parse_str() and do with as you like.",
+            "hint": [
+                [
+                    "\\App\\PaymentGateways\\StdClass",
+                    false
+                ]
+            ],
+            "hint_desc": "Object of return values, documented in example code",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "args": {
+                    "name": "args",
+                    "line": 349,
+                    "short_desc": "Argument array, documented in example code",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "array('status' => 'all')",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "pnp_results": {
+            "name": "pnp_results",
+            "line": 392,
+            "short_desc": "Description",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\App\\PaymentGateways\\StdClass",
+                    false
+                ]
+            ],
+            "hint_desc": "Response values from the query",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "post_args": {
+                    "name": "post_args",
+                    "line": 392,
+                    "short_desc": "HTTP Post values",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "__call": {
+            "name": "__call",
+            "line": 431,
+            "short_desc": "Catch-all method which allows us to handle undocumented, or\nnot-yet-implemented API methods.",
+            "long_desc": "<code>\n$p = new PnP;\n$return = $p->undocumented_method( $args );\n<\/code>",
+            "hint": [
+                [
+                    "\\App\\PaymentGateways\\StdObj",
+                    false
+                ]
+            ],
+            "hint_desc": "Return object",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "method": {
+                    "name": "method",
+                    "line": 431,
+                    "short_desc": "Method to be called (handled automatically when called\nas an object method).",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "args": {
+                    "name": "args",
+                    "line": 431,
+                    "short_desc": "Argument array, if any",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

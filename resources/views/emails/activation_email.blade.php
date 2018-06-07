@@ -1,0 +1,1 @@
+{!! getSetting('ACTIVATION_EMAIL') !!}

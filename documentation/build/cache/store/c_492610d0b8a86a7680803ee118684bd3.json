@@ -1,0 +1,250 @@
+{
+    "name": "App\\Package",
+    "line": 16,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "property": [
+            [
+                [
+                    [
+                        "mixed",
+                        false
+                    ]
+                ],
+                "",
+                "name"
+            ],
+            [
+                [
+                    [
+                        "array",
+                        false
+                    ],
+                    [
+                        "integer",
+                        false
+                    ]
+                ],
+                "",
+                "cost"
+            ],
+            [
+                [
+                    [
+                        "array",
+                        false
+                    ],
+                    [
+                        "string",
+                        false
+                    ]
+                ],
+                "",
+                "cost_per"
+            ],
+            [
+                [
+                    [
+                        "array",
+                        false
+                    ],
+                    [
+                        "string",
+                        false
+                    ]
+                ],
+                "",
+                "plan"
+            ],
+            [
+                [
+                    [
+                        "array",
+                        false
+                    ],
+                    [
+                        "boolean",
+                        false
+                    ]
+                ],
+                "",
+                "status"
+            ],
+            [
+                [
+                    [
+                        "array",
+                        false
+                    ],
+                    [
+                        "boolean",
+                        false
+                    ]
+                ],
+                "",
+                "featured"
+            ],
+            [
+                [
+                    [
+                        "array",
+                        false
+                    ],
+                    [
+                        "integer",
+                        false
+                    ]
+                ],
+                "",
+                "pricing_order"
+            ]
+        ]
+    },
+    "namespace": "App",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\Package.php",
+    "relative_file": null,
+    "hash": "c6cfb37442fac0b2c92683eb3d6832c2445719ab",
+    "parent": "App\\BaseModel",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "BaseModel": "App\\BaseModel"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "guarded": {
+            "name": "guarded",
+            "line": 23,
+            "short_desc": "The attributes that aren't mass assignable.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "id",
+                            "attributes": {
+                                "startLine": 23,
+                                "endLine": 23,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 23,
+                            "endLine": 23
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 23,
+                    "endLine": 23,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "scopeActive": {
+            "name": "scopeActive",
+            "line": 25,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "query": {
+                    "name": "query",
+                    "line": 25,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getStatusAttribute": {
+            "name": "getStatusAttribute",
+            "line": 30,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getFeaturedAttribute": {
+            "name": "getFeaturedAttribute",
+            "line": 35,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "features": {
+            "name": "features",
+            "line": 40,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "subscriptions": {
+            "name": "subscriptions",
+            "line": 45,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

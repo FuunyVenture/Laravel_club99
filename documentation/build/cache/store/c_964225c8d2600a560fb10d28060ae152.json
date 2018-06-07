@@ -1,0 +1,413 @@
+{
+    "name": "App\\Http\\Controllers\\Member\\ShipmentsController",
+    "line": 33,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Http\\Controllers\\Member",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\Http\\Controllers\\Member\\ShipmentsController.php",
+    "relative_file": null,
+    "hash": "cc6f0648c7acc013c0804b52c9a81bda322ca52e",
+    "parent": "App\\Http\\Controllers\\Controller",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Item": "App\\Item",
+        "Product": "App\\Product",
+        "Retailer": "App\\Retailer",
+        "Shipment": "App\\Shipment",
+        "ShipmentDeliveryDetail": "App\\ShipmentDeliveryDetail",
+        "Tax": "App\\Tax",
+        "User": "App\\User",
+        "Carbon": "Carbon\\Carbon",
+        "Exception": "Dompdf\\Exception",
+        "NotifynderBuilder": "Fenos\\Notifynder\\Builder\\NotifynderBuilder",
+        "EntityNotIterableException": "Fenos\\Notifynder\\Exceptions\\EntityNotIterableException",
+        "IterableIsEmptyException": "Fenos\\Notifynder\\Exceptions\\IterableIsEmptyException",
+        "Notifynder": "Fenos\\Notifynder\\Facades\\Notifynder",
+        "Request": "Illuminate\\Http\\Request",
+        "DB": "Illuminate\\Support\\Facades\\DB",
+        "Log": "Log",
+        "Validator": "Validator",
+        "Mail": "Mail",
+        "Auth": "Illuminate\\Support\\Facades\\Auth",
+        "Requests": "App\\Http\\Requests",
+        "Controller": "App\\Http\\Controllers\\Controller"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 35,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "index": {
+            "name": "index",
+            "line": 46,
+            "short_desc": "Display a listing of the resource.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Http\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "create": {
+            "name": "create",
+            "line": 72,
+            "short_desc": "Show the form for creating a new resource.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Http\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "store": {
+            "name": "store",
+            "line": 97,
+            "short_desc": "Store a new shipment in storage with all it's items.",
+            "long_desc": "* Request must contains:\n* retailer_select - sender's name or 'add_new' if user wants to create a new sender\n* retailer_name - sender's name\n* retailer_website - sender's website\n* invoice - shipment's invoice\n* shipping_amount - user's paid shipping cost\n* tax_amount - user's paid shipping tax\n* weight - shipment's weight\n* height - shipment's height\n* length - shipment's length\n* tracking_number - shipment's tracking number\n* order_number - shipment's order number\n* items - list of shipment's items\n\nOn Success: return json with new shipment's id.\n\nOn Error: return json with errors.",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 97,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Http\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Http",
+                            "Request"
+                        ],
+                        "attributes": {
+                            "startLine": 97,
+                            "endLine": 97
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "uploadShipmentInvoice": {
+            "name": "uploadShipmentInvoice",
+            "line": 259,
+            "short_desc": "Update an uploaded invoice for a shipment.",
+            "long_desc": "* Request must contains:\n* shipment_id - shipment's id\n* shipment_invoice - shipment's invoice\n\nOn Success: return message 'Shipment Invoice replaced successfully!'\n\nOn Error: error message 'Something went wrong!'",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 259,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Http\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Http",
+                            "Request"
+                        ],
+                        "attributes": {
+                            "startLine": 259,
+                            "endLine": 259
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "show": {
+            "name": "show",
+            "line": 285,
+            "short_desc": "Display the specified resource.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Http\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 285,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "edit": {
+            "name": "edit",
+            "line": 295,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "menu": {
+                    "name": "menu",
+                    "line": 295,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\App\\Http\\Controllers\\Member\\Menu",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "App",
+                            "Http",
+                            "Controllers",
+                            "Member",
+                            "Menu"
+                        ],
+                        "attributes": {
+                            "startLine": 295,
+                            "endLine": 295
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "update": {
+            "name": "update",
+            "line": 304,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 304,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\App\\Http\\Controllers\\Member\\MenuRequest",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "App",
+                            "Http",
+                            "Controllers",
+                            "Member",
+                            "MenuRequest"
+                        ],
+                        "attributes": {
+                            "startLine": 304,
+                            "endLine": 304
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "menu": {
+                    "name": "menu",
+                    "line": 304,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\App\\Http\\Controllers\\Member\\Menu",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "App",
+                            "Http",
+                            "Controllers",
+                            "Member",
+                            "Menu"
+                        ],
+                        "attributes": {
+                            "startLine": 304,
+                            "endLine": 304
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "destroy": {
+            "name": "destroy",
+            "line": 312,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [
+                "\"2\" @param tags are expected but only \"1\" found"
+            ],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 312,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Http\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Http",
+                            "Request"
+                        ],
+                        "attributes": {
+                            "startLine": 312,
+                            "endLine": 312
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "menu": {
+                    "name": "menu",
+                    "line": 312,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\App\\Http\\Controllers\\Member\\Menu",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "App",
+                            "Http",
+                            "Controllers",
+                            "Member",
+                            "Menu"
+                        ],
+                        "attributes": {
+                            "startLine": 312,
+                            "endLine": 312
+                        }
+                    },
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

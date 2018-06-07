@@ -1,0 +1,97 @@
+{
+    "name": "App\\Console\\Commands\\Inspire",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Console\\Commands",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\Console\\Commands\\Inspire.php",
+    "relative_file": null,
+    "hash": "a39664b0d34b882512ea330124406b17747cd1d2",
+    "parent": "Illuminate\\Console\\Command",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Command": "Illuminate\\Console\\Command",
+        "Inspiring": "Illuminate\\Foundation\\Inspiring"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "signature": {
+            "name": "signature",
+            "line": 15,
+            "short_desc": "The name and signature of the console command.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "inspire",
+                "attributes": {
+                    "startLine": 15,
+                    "endLine": 15,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        },
+        "description": {
+            "name": "description",
+            "line": 22,
+            "short_desc": "The console command description.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "Display an inspiring quote",
+                "attributes": {
+                    "startLine": 22,
+                    "endLine": 22,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "handle": {
+            "name": "handle",
+            "line": 29,
+            "short_desc": "Execute the console command.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

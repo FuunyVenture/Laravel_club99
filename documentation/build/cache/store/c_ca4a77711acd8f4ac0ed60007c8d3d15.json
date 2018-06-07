@@ -1,0 +1,169 @@
+{
+    "name": "App\\Http\\Controllers\\Auth\\AuthController",
+    "line": 16,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Http\\Controllers\\Auth",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\Http\\Controllers\\Auth\\AuthController.php",
+    "relative_file": null,
+    "hash": "aad4df80798d12960d71077ce50a543b23ac832f",
+    "parent": "App\\Http\\Controllers\\Controller",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "User": "App\\User",
+        "NotifynderBuilder": "Fenos\\Notifynder\\Builder\\NotifynderBuilder",
+        "EntityNotIterableException": "Fenos\\Notifynder\\Exceptions\\EntityNotIterableException",
+        "IterableIsEmptyException": "Fenos\\Notifynder\\Exceptions\\IterableIsEmptyException",
+        "Notifynder": "Fenos\\Notifynder\\Facades\\Notifynder",
+        "Mail": "Mail",
+        "Validator": "Validator",
+        "Controller": "App\\Http\\Controllers\\Controller",
+        "ThrottlesLogins": "Illuminate\\Foundation\\Auth\\ThrottlesLogins",
+        "AuthenticatesAndRegistersUsers": "Illuminate\\Foundation\\Auth\\AuthenticatesAndRegistersUsers"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Illuminate\\Foundation\\Auth\\AuthenticatesAndRegistersUsers": "Illuminate\\Foundation\\Auth\\AuthenticatesAndRegistersUsers",
+        "Illuminate\\Foundation\\Auth\\ThrottlesLogins": "Illuminate\\Foundation\\Auth\\ThrottlesLogins"
+    },
+    "properties": {
+        "redirectTo": {
+            "name": "redirectTo",
+            "line": 37,
+            "short_desc": "Where to redirect users after login \/ registration.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "value": "member\/subscription",
+                "attributes": {
+                    "startLine": 37,
+                    "endLine": 37,
+                    "kind": 1
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 44,
+            "short_desc": "Create a new authentication controller instance.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "validator": {
+            "name": "validator",
+            "line": 55,
+            "short_desc": "Get a validator for an incoming registration request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Contracts\\Validation\\Validator",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 55,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "create": {
+            "name": "create",
+            "line": 72,
+            "short_desc": "Create a new user instance after a valid registration.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\App\\User",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 72,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getLogin": {
+            "name": "getLogin",
+            "line": 115,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

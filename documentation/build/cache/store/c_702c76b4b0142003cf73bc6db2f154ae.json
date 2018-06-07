@@ -1,0 +1,69 @@
+{
+    "name": "App\\Http\\Controllers\\Admin\\DashboardController",
+    "line": 17,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Http\\Controllers\\Admin",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\Http\\Controllers\\Admin\\DashboardController.php",
+    "relative_file": null,
+    "hash": "1086b6f84929c882856df34374bb63a754d8024e",
+    "parent": "App\\Http\\Controllers\\Controller",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Feature": "App\\Feature",
+        "Controller": "App\\Http\\Controllers\\Controller",
+        "Requests": "App\\Http\\Requests",
+        "Invoice": "App\\Invoice",
+        "Package": "App\\Package",
+        "Page": "App\\Page",
+        "Shipment": "App\\Shipment",
+        "User": "App\\User",
+        "Carbon": "Carbon\\Carbon",
+        "Request": "Illuminate\\Http\\Request",
+        "Log": "Log"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 23,
+            "short_desc": "DashboardController constructor.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "index": {
+            "name": "index",
+            "line": 33,
+            "short_desc": "Show the application dashboard.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\App\\Http\\Controllers\\Admin\\View",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

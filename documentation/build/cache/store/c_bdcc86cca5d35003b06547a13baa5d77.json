@@ -1,0 +1,32 @@
+{
+    "name": "App\\Http\\Controllers\\Controller",
+    "line": 10,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Http\\Controllers",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\Http\\Controllers\\Controller.php",
+    "relative_file": null,
+    "hash": "6f3a21b56adaba3ff695fe07c0878c8c6fa8186f",
+    "parent": "Illuminate\\Routing\\Controller",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "DispatchesJobs": "Illuminate\\Foundation\\Bus\\DispatchesJobs",
+        "BaseController": "Illuminate\\Routing\\Controller",
+        "ValidatesRequests": "Illuminate\\Foundation\\Validation\\ValidatesRequests",
+        "AuthorizesRequests": "Illuminate\\Foundation\\Auth\\Access\\AuthorizesRequests"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Illuminate\\Foundation\\Auth\\Access\\AuthorizesRequests": "Illuminate\\Foundation\\Auth\\Access\\AuthorizesRequests",
+        "Illuminate\\Foundation\\Bus\\DispatchesJobs": "Illuminate\\Foundation\\Bus\\DispatchesJobs",
+        "Illuminate\\Foundation\\Validation\\ValidatesRequests": "Illuminate\\Foundation\\Validation\\ValidatesRequests"
+    },
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>App\PaymentGateways\PnP | Club99love API Documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:App_PaymentGateways_PnP" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Club99love API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../App.html">App</a></li>
+                                        <li><a href="../../App/PaymentGateways.html">PaymentGateways</a></li>
+    
+                <li>PnP</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PnP
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>PnP</strong>
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_apiurl">
+                                        protected                                        
+                </td>
+                <td>$apiurl</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_publisher_name">
+                                        protected                                        
+                </td>
+                <td>$publisher_name</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_publisher_password">
+                                        protected                                        
+                </td>
+                <td>$publisher_password</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $args = array())
+        
+                                            <p>Object constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\PaymentGateways\StdClass">StdClass</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_auth">auth</a>($args = array())
+        
+                                            <p>Process a payment against the Plug n Pay payment gateway.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\PaymentGateways\StdClass">StdClass</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_void">void</a>(array $args = array())
+        
+                                            <p>Cancels the most recent transaction operation of the given orderID.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\PaymentGateways\StdClass">StdClass</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_authprev">authprev</a>(array $args = array())
+        
+                                            <p>Do a new authorizaction, using information from a previous
+authorization, so that you don't need to know the payment information
+again.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\PaymentGateways\StdClass">StdClass</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_query_trans">query_trans</a>(array $args = array())
+        
+                                            <p>Query for the status of a completed transaction</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\PaymentGateways\StdClass">StdClass</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_list_members">list_members</a>(array $args = array(&#039;status&#039; =&gt; &#039;all&#039;))
+        
+                                            <p>List all active/expired profiles and related password info</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\PaymentGateways\StdClass">StdClass</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pnp_results">pnp_results</a>(array $post_args = array())
+        
+                                            <p>Description</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\PaymentGateways\StdObj">StdObj</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $method, array $args)
+        
+                                            <p>Catch-all method which allows us to handle undocumented, or
+not-yet-implemented API methods.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 52</div>
+        <code>                    
+    <strong>__construct</strong>(array $args = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Object constructor</p>                    <p>Get a new object, in order to make a payment:
+<code>
+$pnp = new PnP();
+</code></p>
+
+<p>or reopen a previous one, to query a payment
+<code>
+$pnp = new PnP( array( 'orderID' => '12345' ));
+$status = $php->query_trans();
+</code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td>Object construction array. At present, only supports
+creating an object with a set orderID.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_auth">
+        <div class="location">at         line 154</div>
+        <code>                    <abbr title="App\PaymentGateways\StdClass">StdClass</abbr>
+    <strong>auth</strong>($args = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Process a payment against the Plug n Pay payment gateway.</p>                    <p><code>
+$pnp = new PnP();
+$response = $pnp->payment( $payment_values );
+</code></p>
+
+<p>Values expected to be in the payment array are:</p>
+
+<p><code>
+card-number
+card-name
+card-amount
+card-exp
+email
+ship-name
+address1
+address2
+city
+state
+zip
+country
+card-cvv (optional)
+</code></p>
+
+<p>Finally, the payment_values array may contain an array named
+'packages', containing the packages which were ordered:</p>
+
+<p><code>
+$packages = array( 1 => array( 'packages<em>id' => 1,
+                               'final</em>price' => 2,
+                               'quantity'    => 3,
+                             )
+                 )
+</code></p>
+
+<p>Return value will look like:</p>
+
+<p><code>
+ Array
+(
+    [FinalStatus] => fraud
+    [IPaddress] => 192.168.1.153
+    [MStatus] => badcard
+    [User<em>Agent] =>
+    [address1] => 1421 Main Street
+    [auth</em>code] =>
+    [auth<em>date] => 20080613
+    [auth</em>msg] =>  Invalid Credit Card CVV2/CVC2 Number.|
+    [authtype] => authonly
+    [card<em>amount] => 0.02
+    [card</em>name] => Homer Simpson
+    [card<em>type] => MSTR
+    [cc</em>cvv] => 000
+    [city] => Springfield
+    [convert] => underscores
+    [currency] => usd
+    [dontsndmail] => yes
+    [easycart] => 1
+    [email] =>
+    [errdetails] => card-cvv|CVV invalid length.|
+    [errlevel] => 1
+    [ipaddress] => 192.168.1.153
+    [merchant] => pnpusername
+    [mode] => auth
+    [orderID] => 121345678090645094
+    [paymethod] => credit
+    [publisher<em>email] => test@example.com
+    [publisher</em>name] => pnpusername
+    [resp<em>code] => P56
+    [ship</em>name] => Homer Simpson
+    [shipinfo] => 1
+    [sresp] => E
+    [state] => UT
+    [success] => no
+    [zip] => 40997
+    [MErrMsg] => Invalid Credit Card CVV2/CVC2 Number.|
+    [a] => b</p>
+
+<p>)
+</code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\PaymentGateways\StdClass">StdClass</abbr></td>
+            <td>Response array - example shown above.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_void">
+        <div class="location">at         line 217</div>
+        <code>                    <abbr title="App\PaymentGateways\StdClass">StdClass</abbr>
+    <strong>void</strong>(array $args = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Cancels the most recent transaction operation of the given orderID.</p>                    <p>Mandatory argument 'card-amount', which must not exceed the amount of
+the original transaction. You may wish to obtain that amount ahead of
+time by calling $pnp->query_trans();
+Optional argument 'notify-email', where email notification can be
+sent for transaction problems.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td>Argument array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\PaymentGateways\StdClass">StdClass</abbr></td>
+            <td>Return object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_authprev">
+        <div class="location">at         line 261</div>
+        <code>                    <abbr title="App\PaymentGateways\StdClass">StdClass</abbr>
+    <strong>authprev</strong>(array $args = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Do a new authorizaction, using information from a previous
+authorization, so that you don't need to know the payment information
+again.</p>                    <p>You may explicitly pass the prevorderid in the argument list, or you
+may create a PnP object with the orderID of the previous transaction
+- which ever is more convenient.</p>
+
+<p><code>
+$pnp = new PnP( array( 'orderID' => $prevorderID ));
+$results = $pnp->authprev( array( 'card-amount' => '123.45' ));
+$neworderid = $pnp->orderID;
+<code></p>
+
+<p>Or i f you prefer:</p>
+
+<p><code>
+$pnp = new PnP();
+$results = $pnp->authprev( array( 'prevorderid' => $prevorderID,
+                                  'card-amount' => '123.45' ));
+$neworderid = $pnp->orderID;
+</code></p>
+
+<p>'card-amount' is a required argument.</p>
+
+<p>'reauthtype' is an optional argument.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td>Argument array</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\PaymentGateways\StdClass">StdClass</abbr></td>
+            <td>Return object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_query_trans">
+        <div class="location">at         line 294</div>
+        <code>                    <abbr title="App\PaymentGateways\StdClass">StdClass</abbr>
+    <strong>query_trans</strong>(array $args = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Query for the status of a completed transaction</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td>Arguments. Can specify the 'startdate' if you wish.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\PaymentGateways\StdClass">StdClass</abbr></td>
+            <td>Return object of response values, as per the documentation</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_list_members">
+        <div class="location">at         line 349</div>
+        <code>                    <abbr title="App\PaymentGateways\StdClass">StdClass</abbr>
+    <strong>list_members</strong>(array $args = array(&#039;status&#039; =&gt; &#039;all&#039;))
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>List all active/expired profiles and related password info</p>                    <p><code>
+$pnp = new PnP();
+$members = $pnp->list_members( array( 'status' => 'active' ) );
+</code></p>
+
+<p>Possible arguments are 'status' ('active', 'expired', or 'all') and
+'crypt' ('crypt', 'md5', or 'none')</p>
+
+<p>Return object contains 5 attributes: FinalStatus, auth-msg, MErrMsg,
+TranCount, and members. TranCount contains the number of members.
+members contains a StdClass object for each of those members. Each
+member contains attributes username, password, enddate, and
+purchaseid, and also an attribute 'key' which indicates the axxxxx
+key where the original data appears in the return object.</p>
+
+<p>There will also be methods a00000 - axxxxx for numbers from 0 to
+TranCount, which will return a url-encoded version of the member
+data, which you can parse_str() and do with as you like.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td>Argument array, documented in example code</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\PaymentGateways\StdClass">StdClass</abbr></td>
+            <td>Object of return values, documented in example code</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pnp_results">
+        <div class="location">at         line 392</div>
+        <code>                    <abbr title="App\PaymentGateways\StdClass">StdClass</abbr>
+    <strong>pnp_results</strong>(array $post_args = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Description</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$post_args</td>
+                <td>HTTP Post values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\PaymentGateways\StdClass">StdClass</abbr></td>
+            <td>Response values from the query</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">at         line 431</div>
+        <code>                    <abbr title="App\PaymentGateways\StdObj">StdObj</abbr>
+    <strong>__call</strong>(string $method, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Catch-all method which allows us to handle undocumented, or
+not-yet-implemented API methods.</p>                    <p><code>
+$p = new PnP;
+$return = $p->undocumented_method( $args );
+</code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>Method to be called (handled automatically when called
+as an object method).</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td>Argument array, if any</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\PaymentGateways\StdObj">StdObj</abbr></td>
+            <td>Return object</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

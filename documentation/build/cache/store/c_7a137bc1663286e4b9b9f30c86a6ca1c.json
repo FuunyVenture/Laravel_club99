@@ -1,0 +1,25 @@
+{
+    "name": "App\\Http\\Requests\\Request",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Http\\Requests",
+    "file": "C:\\xampp\\htdocs\\club99\\app\\Http\\Requests\\Request.php",
+    "relative_file": null,
+    "hash": "184298a15cd86c0ffc56655f6bfc264fa9401df5",
+    "parent": "Illuminate\\Foundation\\Http\\FormRequest",
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "FormRequest": "Illuminate\\Foundation\\Http\\FormRequest"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}
