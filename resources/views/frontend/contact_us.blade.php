@@ -26,21 +26,6 @@
                                   novalidate>
                                 {!! csrf_field() !!}
 
-                                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                                    <label class="col-xs-12 col-sm-3 control-label register">Name:</label>
-
-                                    <div class="col-xs-12 col-sm-9">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" name="name"
-                                                   value="{{ old('name') }}">
-                                        </div>
-                                        @if ($errors->has('name'))
-                                            <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                        @endif
-                                    </div>
-                                </div>
 
                                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                     <label class="col-xs-12 col-sm-3 control-label register">Email:</label>
