@@ -15,7 +15,7 @@
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
         }
 
-        .flat .plan li.plan-header {
+        /* .flat .plan li.plan-header {
             padding: 15px;
             font-size: 24px;
             line-height: 24px;
@@ -32,7 +32,7 @@
 
         .flat .plan li.package-feature:nth-child(2) {
             border: none;
-        }
+        } */
 
     </style>
 @endsection
