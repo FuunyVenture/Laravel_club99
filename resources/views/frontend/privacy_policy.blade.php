@@ -21,14 +21,14 @@
                 Unless you ask us not to, we may contact you via email in the future to tell you about specials, new products or services, or changes to this privacy policy.
             </p>
             <p class="completed-invoice">Your Access to and Control Over Information</p>
-            <!-- <p class="invoice-address"> You may opt out of any future contacts from us at any time. You can do the following at any time by contacting us via the email address or phone number given on our website:
+            <p class="invoice-address"> You may opt out of any future contacts from us at any time. You can do the following at any time by contacting us via the email address or phone number given on our website:
                   <ul class="size39">
                       <li>See what data we have about you, if any.</li>
                       <li>Change/correct any data we have about you.</li>
                       <li>Have us delete any data we have about you.</li>
                       <li>Express any concern you have about our use of your data.</li>
                   </ul>
-            </p> -->
+            </p>
             <p class="completed-invoice">Security</p>
             <p class="invoice-address"> We take precautions to protect your information. When you submit sensitive information via the website, your information is protected both online and offline.
                 Wherever we collect sensitive information (such as credit card data), that information is encrypted and transmitted to us in a secure way. You can verify this by looking for a closed lock icon at the bottom of your web browser, or looking for "https" at the beginning of the address of the web page.
