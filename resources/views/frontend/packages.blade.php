@@ -59,11 +59,11 @@
                                         </div>
                                     </div>
                                 </li>
-                                @foreach($package->features as $feature)
+                                <!-- @foreach($package->features as $feature)
                                     <li class="package-feature">
                                         {{$feature->name}}
                                     </li>
-                                @endforeach
+                                @endforeach -->
                             </ul>
                         </div>
                     @endforeach
